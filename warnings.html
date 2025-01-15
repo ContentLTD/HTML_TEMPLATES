@@ -1,0 +1,155 @@
+<html lang="en"><head><style>body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    background-color: #0D1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.notification-box {
+    display: flex;
+}
+
+.notification-bar {
+    width: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.notification-bar.important {
+    background-color: #8957e5;
+}
+
+.notification-bar.warning {
+    background-color: #d29922;
+}
+
+.notification-bar.note {
+    background-color: #1f6feb;
+}
+
+.notification-content {
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #161B22;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    flex-grow: 1;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.important-icon {
+    color: #8957e5;
+}
+
+.warning-icon {
+    color: #d29922;
+}
+
+.note-icon {
+    color: #1f6feb;
+}
+
+.notification-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-title {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.notification-title.important {
+    color: #8957e5;
+}
+
+.notification-title.warning {
+    color: #d29922;
+}
+
+.notification-title.note {
+    color: #1f6feb;
+}
+
+.link {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #79c0ff;
+}
+
+</style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Important Box -->
+        <div class="notification-box">
+            <div class="notification-bar important"></div>
+            <div class="notification-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon important-icon">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <div class="notification-text">
+                    <span class="notification-title important">Important</span>
+                    <span>Lorem Ipsum</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Warning Box -->
+        <div class="notification-box">
+            <div class="notification-bar warning"></div>
+            <div class="notification-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon warning-icon">
+                    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                    <line x1="12" x2="12" y1="9" y2="13"></line>
+                    <line x1="12" x2="12.01" y1="17" y2="17"></line>
+                </svg>
+                <div class="notification-text">
+                    <span class="notification-title warning">Warning</span>
+                    <span>Lorem Ipsum</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note Box -->
+        <div class="notification-box">
+            <div class="notification-bar note"></div>
+            <div class="notification-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon note-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" x2="12" y1="16" y2="12"></line>
+                    <line x1="12" x2="12.01" y1="8" y2="8"></line>
+                </svg>
+                <div class="notification-text">
+                    <span class="notification-title note">Note</span>
+                    <span>Lorem Ipsum</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
